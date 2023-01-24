@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-import Banner from '../assets/location.JPG'
+import Banner from '../assets/One bed (9).jpg'
 
 function Locationbanner() {
   return (
@@ -9,7 +9,7 @@ function Locationbanner() {
         <Image className="banner-image" src={Banner} alt='Banner Amenities'/>
 
         <div className="text">
-            <h1>Location area</h1>
+            <h1>Location area all</h1>
         </div>
     </div>
   )
