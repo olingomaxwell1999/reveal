@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 
-import Banner from '../assets/location.jpg'
+import Banner from '../assets/location.JPG'
 
 function Locationbanner() {
   return (
