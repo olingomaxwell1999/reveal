@@ -4,6 +4,7 @@
   padding: 0;
   outline: none;
   letter-spacing: 1.5px;
+  overflow-x: hidden;
   box-sizing: border-box;
   font-family: 'Futura PT', sans-serif;
 }
@@ -568,6 +569,7 @@ nav{
   width: max-content;
   transform: translateX(0px);
   transition: all 1s ease;
+  overflow: hidden;
 }
 
 .listItem {
