@@ -122,8 +122,8 @@ nav{
 .text{
   position: absolute;
   left: 50%;
-  top: 60%;
-  transform: translate(-60%, -50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin: auto 0;
   display: flex;
   flex-direction: column;
@@ -366,9 +366,14 @@ nav{
   margin-bottom: 20px;
 }
 
-.icon{
+.icon-city{
   font-size: 50px;
-  
+  color: #777777 !important;
+}
+
+.city-card h3{
+  font-size: 20px;
+  color: #777777;
 }
 
 /* Studio Bedroom styles */

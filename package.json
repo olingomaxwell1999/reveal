@@ -11,6 +11,7 @@
   "dependencies": {
     "next": "^13.1.4",
     "react-animation-on-scroll": "^5.1.0",
+    "aos": "^2.3.4",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {

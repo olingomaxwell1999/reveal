@@ -1,5 +1,12 @@
 import React from 'react'
-import {GrSwim} from 'react-icons/gr'
+// import {GrSwim} from 'react-icons/gr'
+import {TbSwimming} from 'react-icons/tb'
+import {GiLift} from 'react-icons/gi'
+import {MdBusinessCenter} from 'react-icons/md'
+import {GrLounge} from 'react-icons/gr'
+import {BiRestaurant} from 'react-icons/bi'
+import {AiOutlineCoffee} from 'react-icons/ai'
+import {CgGym} from 'react-icons/cg'
 
 function City() {
   return (
@@ -10,37 +17,37 @@ function City() {
       </div>
       <div className="bottom-city">
         <div className='city-card'>
-          <GrSwim className='icon' color={'#f8a428'}/>
+          <TbSwimming className='icon-city' color={'#777777'}/>
           <h3>rooftop swimming pool</h3>
         </div>
 
         <div className='city-card'>
-          <GrSwim className='icon' color={'#f8a428'}/>
-          <h3>Two high speed trains</h3>
+          <GiLift className='icon-city' color={'#777777'}/>
+          <h3>Two high speed lift</h3>
         </div>
 
         <div className='city-card'>
-          <GrSwim className='icon' color={'#f8a428'}/>
+          <MdBusinessCenter color={'#777777'} className='icon-city' />
           <h3>Business Center</h3>
         </div>
 
         <div className='city-card'>
-          <GrSwim className='icon' color={'#f8a428'}/>
+          <GrLounge color={'#777777'} className='icon-city' />
           <h3>Resident Lounge</h3>
         </div>
 
         <div className='city-card'>
-          <GrSwim className='icon' color={'#f8a428'}/>
+          <BiRestaurant className='icon-city' color={'#777777'}/>
           <h3>Rooftop Fine Dine Restaurant</h3>
         </div>
 
         <div className='city-card'>
-          <GrSwim className='icon' color={'#f8a428'}/>
+          <AiOutlineCoffee className='icon-city' color={'#777777'}/>
           <h3>Coffee Shop</h3>
         </div>
 
         <div className='city-card'>
-          <GrSwim className='icon' color={'#f8a428'}/>
+          <CgGym className='icon-city' color={'#777777'}/>
           <h3>fully fitted gymnasium with</h3>
           <h3>indoor and outdoor spaces</h3>
         </div>
