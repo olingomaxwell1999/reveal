@@ -9,7 +9,7 @@ function Locationbanner() {
         <Image className="banner-image" src={Banner} alt='Banner Amenities'/>
 
         <div className="text">
-            <h1>Location</h1>
+            <h1>Location area</h1>
         </div>
     </div>
   )
