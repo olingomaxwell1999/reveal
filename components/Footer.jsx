@@ -1,18 +1,33 @@
 import Image from "next/image"
 import Logo from '../assets/logo.jpg'
+import React,{useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Footer() {
+
+  useEffect(() => {
+    AOS.init({duration:1500})
+  })
+
   return (
-    <div className='main-footer'>
+    <div data-aos='fade-up' className='main-footer'>
       <div className="top">
         <div className="area">
-          <Image src={Logo} height={200} alt='the reveal logo'/>
+          <Image src={Logo} height={200} width={200} priority='true' alt='the reveal logo'/>
+          <div className="logo-line"></div>
         </div>
         <div className="area">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolores optio facilis nihil praesentium animi eos neque sit, nesciunt aut at vitae ea doloribus alias consequuntur quibusdam suscipit iusto odio.</p>
+          <p>Copyright 2022</p>
+          <p>THE REVEAL.</p>
+          <p>All Rights Reserved</p>
+
+          <div className="area-line"></div>
         </div>
         <div className="area">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur nobis ut fuga nostrum commodi velit natus quaerat delectus quis? Nesciunt facilis alias voluptatem quos ullam quod. Iste, voluptatem maiores!
+          <p>Copyright 2022</p>
+          <p>THE REVEAL.</p>
+          <p>All Rights Reserved</p>
         </div>
       </div>
 

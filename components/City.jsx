@@ -1,16 +1,22 @@
-import React from 'react'
-// import {GrSwim} from 'react-icons/gr'
 import {TbSwimming} from 'react-icons/tb'
 import {GiLift} from 'react-icons/gi'
 import {MdBusinessCenter} from 'react-icons/md'
-import {GrLounge} from 'react-icons/gr'
+import {FaCouch} from 'react-icons/fa'
 import {BiRestaurant} from 'react-icons/bi'
 import {AiOutlineCoffee} from 'react-icons/ai'
 import {CgGym} from 'react-icons/cg'
+import React,{useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function City() {
+
+  useEffect(() => {
+    AOS.init({duration:1500})
+  })
+
   return (
-    <div className='city'>
+    <div data-aos='fade-up' className='city'>
       <div className="top">
         <h2>Designed for</h2>
         <h2 className='uppercase two'>living</h2>
@@ -32,7 +38,7 @@ function City() {
         </div>
 
         <div className='city-card'>
-          <GrLounge color={'#777777'} className='icon-city' />
+          <FaCouch color={'#777777'} className='icon-city' />
           <h3>Resident Lounge</h3>
         </div>
 

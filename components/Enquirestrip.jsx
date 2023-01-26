@@ -1,8 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Enquirestrip() {
+
+  useEffect(() => {
+    AOS.init({duration:1500})
+  })
+
   return (
-    <div className='enquirestrip'>
+    <div data-aos='fade-up' className='enquirestrip'>
       <div className="description-area">
         <div className="place">
           <h3>you are viewing</h3>

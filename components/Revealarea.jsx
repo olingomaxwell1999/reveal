@@ -1,8 +1,16 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Revealarea() {
+
+  useEffect(() => {
+    AOS.init({duration:1500})
+  })
+
   return (
-    <div className='amenities-second'>
+    
+    <div data-aos='fade-up' className='amenities-second'>
         <div className="amenities-first-heading">
             <h3>WELCOME TO</h3>
             <h2>THE REVEAL ESTATE</h2>

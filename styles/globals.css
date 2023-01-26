@@ -132,19 +132,22 @@ nav{
   align-content: center;
 }
 
-.text h3{
-  font-size: 50px;
-  color: #000;
-  text-align: center;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
 .text h1{
   font-size: 100px;
-  color: #f8a428;
+  color: #fff;
   margin-top: -20px;
   text-transform: uppercase;
+  font-weight: 400;
+}
+
+.middle-line{
+  height: 100px !important;
+  width: 1.5px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
 }
 
 .enquirestrip{
@@ -239,6 +242,23 @@ nav{
   grid-template-columns: repeat(3,1fr);
 }
 
+.main-footer .top .area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-footer .top .area .logo-line,
+.main-footer .top .area .area-line{
+  height: 200px;
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  left: 380px;
+}
+
 @media screen and (max-width: 768px){
   .main-footer .top{
     grid-template-columns: repeat(2,1fr);
@@ -263,11 +283,12 @@ nav{
 
 /* About Team Styles */
 .about-team{
-  padding: 20px 40px;
+  padding: 20px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .about-team .top{
@@ -284,6 +305,10 @@ nav{
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
   width: 100%;
+}
+
+.about-team .bottom .place h2{
+  color: black;
 }
 
 @media screen and (max-width: 768px){
@@ -384,6 +409,7 @@ nav{
   padding: 20px 40px;
   background-color: #f8a428;
   text-align: center;
+  position: relative;
 }
 
 .top-layer{
@@ -409,9 +435,13 @@ nav{
   padding: 0 20px;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-weight: 400 !important;
+}
+
 .side h2{
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
