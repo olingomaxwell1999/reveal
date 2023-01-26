@@ -13,4 +13,4 @@ function location() {
   )
 }
 
-export default location
+  export default location

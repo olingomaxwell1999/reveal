@@ -1,8 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Locationfirst() {
+
+    useEffect(() => {
+    AOS.init({duration:1500})
+  })
+
   return (
-    <div className='amenities-first'>
+    <div data-aos='fade-up' className='amenities-first'>
         <div className="amenities-first-heading">
             <h2>LOCATION</h2>
         </div>

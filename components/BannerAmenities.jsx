@@ -12,7 +12,7 @@ function BannerAmenities() {
 
   return (
     <div data-aos="zoom-in" className='banner-amenities'>
-        <Image className="banner-image" src={Banner} alt='Banner Amenities'/>
+        <Image priority='true' className="banner-image" src={Banner} alt='Banner Amenities'/>
 
         <div className="text">
           <h1>Amenities</h1>

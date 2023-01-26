@@ -1,8 +1,14 @@
 import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
-import { useRef, useState } from "react";
+import { useRef, useState,useEffect } from "react";
 import ListItem from './ListItem';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Amenitiesslider() {
+
+  useEffect(() => {
+    AOS.init({duration:1500})
+  })
 
     const [isMoved, setIsMoved] = useState(false);
     const [slideNumber, setSlideNumber] = useState(0);
@@ -23,7 +29,7 @@ function Amenitiesslider() {
   };
 
     return (
-        <div className='list'>
+        <div data-aos='fade-up' className='list'>
             <div className="wrapper">
                 <AiOutlineArrowLeft className="sliderArrow left" onClick={() => handleClick("left")} style={{ display: !isMoved && "none" }}
                 />

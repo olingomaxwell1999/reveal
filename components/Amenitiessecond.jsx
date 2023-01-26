@@ -1,8 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function Amenitiessecond() {
+
+  useEffect(() => {
+    AOS.init({duration:1500})
+  })
+
   return (
-    <div className='amenities-second'>
+    <div data-aos='fade-up' className='amenities-second'>
         <div className="amenities-first-heading">
             <h3>BREATHTAKING VIEWS</h3>
             <h2>WELL DESIGNED LAYOUTS</h2>
