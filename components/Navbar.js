@@ -6,10 +6,10 @@ import NavItem from "./NavItem";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
+  { text: "Residences", href: "/residences" },
   { text: "Amenities", href: "/amenities" },
-  { text: "One Bedroom", href: "/onebedroom" },
-  { text: "Studio", href: "/studio" },
   { text: "Location", href: "/location" },
+  { text: "Investors Guide", href: "/investorsguide" },
   { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {

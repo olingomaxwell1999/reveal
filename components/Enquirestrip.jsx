@@ -9,7 +9,7 @@ function Enquirestrip() {
   })
 
   return (
-    <div data-aos='fade-up' className='enquirestrip'>
+    <div data-aos='zoom-in' className='enquirestrip'>
       <div className="description-area">
         <div className="place">
           <h3>you are viewing</h3>

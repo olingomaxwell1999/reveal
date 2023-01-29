@@ -1,4 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+/* Tailwind config */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +14,12 @@
   box-sizing: border-box;
   font-family: 'Futura PT', sans-serif;
 }
+
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 body {
   overflow: hidden; /* Hide scrollbars */
 }
@@ -16,9 +28,11 @@ a{
   color: inherit;
 }
 header{
-  position: sticky;
+  position: fixed !important;
   z-index: 100000;
   top: 0;
+  left: 0;
+  width: 100%;
 }
 nav{
   display: flex;
@@ -63,6 +77,7 @@ nav{
 
 .nav__link:hover{
  color: #f8a428;
+ overflow: hidden;
 }
 
 .center{
@@ -108,6 +123,7 @@ nav{
   object-fit: contain;
   object-fit: cover;
   z-index: -10;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px){
@@ -121,8 +137,9 @@ nav{
 
 .text{
   position: absolute;
+  padding: 10px;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   margin: auto 0;
   display: flex;
@@ -137,6 +154,7 @@ nav{
   margin-top: -20px;
   text-transform: uppercase;
   font-weight: 400;
+  text-align: center;
 }
 
 @media screen and (max-width: 468px){
@@ -159,6 +177,12 @@ nav{
 }
 
 .enquirestrip{
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  margin: auto;
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
@@ -173,11 +197,19 @@ nav{
   margin-bottom: 20px;
 }
 
+/* .description-area .place h2{
+  color: #fff;
+} */
+
 @media screen and (max-width: 768px){
   .description-area{
     grid-template-columns: repeat(2,1fr);
     margin: auto;
     gap: 40px;
+  }
+
+  .enquirestrip{
+    position: relative;
   }
 }
 
@@ -246,32 +278,51 @@ nav{
 }
 
 .main-footer .top{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 40px;
 }
 
 .main-footer .top .area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.main-footer .top .right-area-side{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .main-footer .top .area .logo-line,
 .main-footer .top .area .area-line{
-  height: 200px;
+  height: 150px;
   width: 2px;
   background-color: black;
-  position: absolute;
-  left: 380px;
 }
 
 @media screen and (max-width: 768px){
   .main-footer .top{
-    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: auto;
     gap: 40px;
+  }
+
+  .main-footer .top .right-area-side{
+    margin-bottom: 20px;
+  }
+
+  .main-footer .top .area .logo-line,
+  .main-footer .top .area .area-line{
+    display: none;
   }
 }
 
@@ -322,7 +373,7 @@ nav{
 @media screen and (max-width: 768px){
   .about-team .bottom{
     grid-template-columns: 1fr;
-    margin: auto;
+    /* margin: auto; */
     gap: 40px;
     width: 100%;
   }
@@ -331,7 +382,7 @@ nav{
 @media screen and (max-width: 468px){
   .about-team .bottom{
     grid-template-columns: 1fr;
-    margin: auto;
+    /* margin: auto; */
     gap: 40px;
   }
 }
@@ -382,6 +433,12 @@ nav{
   /* opacity: .7; */
 }
 
+@media screen and (max-width: 768px){
+  .bottom-city{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 @media screen and (max-width: 468px){
   .bottom-city{
     grid-template-columns: 1fr;
@@ -425,12 +482,20 @@ nav{
   grid-template-columns: repeat(2,1fr);
 }
 
-@media screen and (max-width: 468px){
+.studiobedroom .top-layer .side h2{
+  color: #fff;
+}
+
+@media screen and (max-width: 768px){
   .top-layer{
     grid-template-columns: 1fr;
     /* margin: auto; */
     align-items: start;
-    /* gap: 40px; */
+    gap: 40px;
+  }
+
+  .middle-line {
+    display: none;
   }
 }
 
@@ -495,11 +560,6 @@ h1,h2,h3,h4,h5,h6{
   font-size: 30px;
 }
 
-.description{
-  width: 500px;
-  margin: auto;
-}
-
 
 /* Banner Amenities styles */
 .banner-amenities{
@@ -544,8 +604,21 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .amenities-first-text{
-  width: 50%;
+  width: 60%;
   margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width:768px) {
+  .amenities-first-text{
+    width: 80%;
+  }
+
+  .main-banner .text h1,
+  .banner-amenities .text h1 {
+    font-size: 45px;
+    text-align: center;
+  }
 }
 
 /* Cover amenties Styles */
@@ -612,8 +685,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .listItem {
-  width: 500px;
-  height: 300px;
+  width: 400px;
+  height: 250px;
   background-color: var(--main-color);
   margin-right: 5px;
   overflow: hidden;
@@ -645,7 +718,9 @@ ul{
 .contact-area{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  padding: 60px 0px;
+  /* padding: 60px 0px; */
+  margin-top: -5px;
+  margin-bottom: 30px;
 }
 
 .contact-form-area{
@@ -692,24 +767,31 @@ ul{
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 400;
+  /* margin-bottom: 10px; */
 }
 
 .input-carrier input{
   padding: 10px 20px;
   width: 100%;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   border: none;
   outline: none;
+  background: transparent;
+  border-bottom: 2px solid black;
+  color: #fff;
 }
 
 .message{
   padding: 10px 20px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   width: 100%;
   border: none;
   outline: none;
   height: fit-content;
   margin-bottom: 30px;
+  background: transparent;
+  border-bottom: 2px solid black;
+  color: #fff;
 }
 
 .contact-logo-area{
@@ -722,7 +804,7 @@ ul{
   position: absolute;
   left: -30px;
   top: 40px;
-  width: 100%;
+  width: 120% !important;
   object-fit: cover;
 }
 
@@ -734,13 +816,14 @@ ul{
   left: 50%;
   transform: translateX(-50%);
   top: 380px;
+  box-shadow: 1px 1px 15px 3px rgba(0,0,0,0.75);
 }
 
 .socials-container{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 520px;
+  top: 530px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -771,4 +854,24 @@ ul{
   height: 500px;
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width:768px) {
+  .contact-area{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-image-logo-area {
+    position: relative;
+  }
+
+  .socials-container{
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width:568px) {
+  .top-form{
+    grid-template-columns: 1fr;
+  }
 }

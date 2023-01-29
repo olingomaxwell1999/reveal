@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "aos": "^2.3.4",
     "next": "^13.1.4",
     "react-animation-on-scroll": "^5.1.0",
-    "aos": "^2.3.4",
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
-    "eslint": "^8.32.0"
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.32.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
   }
 }

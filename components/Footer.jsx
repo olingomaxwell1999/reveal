@@ -14,17 +14,22 @@ function Footer() {
     <div data-aos='fade-up' className='main-footer'>
       <div className="top">
         <div className="area">
-          <Image src={Logo} height={200} width={200} priority='true' alt='the reveal logo'/>
+          <div className="right-area-side">
+            <Image src={Logo} height={200} width={200} priority='true' alt='the reveal logo'/>
+          </div>
+
           <div className="logo-line"></div>
         </div>
         <div className="area">
-          <p>Copyright 2022</p>
-          <p>THE REVEAL.</p>
-          <p>All Rights Reserved</p>
+          <div className="right-area-side">
+            <p>Copyright 2022</p>
+            <p>THE REVEAL.</p>
+            <p>All Rights Reserved</p>
+          </div>
 
           <div className="area-line"></div>
         </div>
-        <div className="area">
+        <div className="right-area-side">
           <p>Copyright 2022</p>
           <p>THE REVEAL.</p>
           <p>All Rights Reserved</p>

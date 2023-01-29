@@ -2,7 +2,7 @@ import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-function Revealarea() {
+function ResidencesDisplay() {
 
   useEffect(() => {
     AOS.init({duration:1500})
@@ -28,4 +28,4 @@ function Revealarea() {
   )
 }
 
-export default Revealarea
+export default ResidencesDisplay
