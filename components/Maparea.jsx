@@ -3,6 +3,7 @@ import Banner from '../assets/One bed (6).jpg'
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { GoogleMap } from '@react-google-maps/api'
 
 function Maparea() {
 
@@ -11,8 +12,8 @@ function Maparea() {
   })
 
   return (
-    <div data-aos='fade-up' className='map-area'>
-      <Image src={Banner} alt='mapimage' className='map-image-area'/>
+    <div data-aos='fade-up'>
+      <GoogleMap zoom={10} center={{lat: 44, lng: -80}} mapContainerClassName='map-area'></GoogleMap>
     </div>
   )
 }

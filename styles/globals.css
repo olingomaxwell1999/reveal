@@ -177,13 +177,14 @@ nav{
 }
 
 .enquirestrip{
+  /* height: 130px; */
   position: fixed;
   width: 100%;
   background-color: #fff;
   left: 0;
   bottom: 0;
   margin: auto;
-  padding: 20px 40px;
+  padding: 10px 40px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -194,7 +195,7 @@ nav{
 .description-area{
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* .description-area .place h2{

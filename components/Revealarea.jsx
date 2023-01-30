@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Link from 'next/link'
 
 function Revealarea() {
 
@@ -21,7 +22,11 @@ function Revealarea() {
         </div>
 
         <div style={{marginTop:'30px'}} className='btn-area'>
-          <button className="btn">register interests</button>
+          
+
+          <Link href='https://share-eu1.hsforms.com/1LcZAa3CaT0-6ukDcxYncXgfblz8' target='_blank'>
+            <button className="btn">register interests</button>
+          </Link>
         </div>
 
     </div>

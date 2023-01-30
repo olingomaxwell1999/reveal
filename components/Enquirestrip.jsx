@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Link from 'next/link'
 
 function Enquirestrip() {
 
@@ -35,8 +36,10 @@ function Enquirestrip() {
       
       <div className="btn-area">
         <div className="place">
-          <button className="btn">register interest</button>
-      </div>
+          <Link href='https://share-eu1.hsforms.com/1LcZAa3CaT0-6ukDcxYncXgfblz8' target='_blank'>
+            <button className="btn">register interests</button>
+          </Link>
+        </div>
       </div>
     </div>
   )
