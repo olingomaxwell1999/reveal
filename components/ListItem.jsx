@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import SliderImage from '../assets/Reveal rooftop (2).jpg'
 
-function ListItem() {
+function ListItem({src,alt}) {
   return (
     <div className='listItem'>
-      <Image src={SliderImage} alt='slider item' className='img'/>
+      <Image src={src} priority='true' alt={alt} className='img'/>
     </div>
   )
 }

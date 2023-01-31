@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Link from 'next/link'
 
 function Studiobedroom() {
 
@@ -49,7 +50,9 @@ elements expected in this class are blended seamlessly.</p> */}
             </div>
         </div>
         <div className="bottom-layer">
-            <button className='btn-light'>download brochure</button>
+            <Link href='../assets/THE REVEAL BROCHURE.pdf' download='true'>
+              <button className='btn-light'>download brochure</button>
+            </Link>
         </div>
     </div>
   )
