@@ -1,5 +1,6 @@
 import Contactarea from '@/components/Contactarea'
 import Contactsbanner from '@/components/Contactsbanner'
+import Locationcover from '@/components/Locationcover'
 import Maparea from '@/components/Maparea'
 import { useLoadScript } from '@react-google-maps/api'
 import React from 'react'
@@ -17,7 +18,8 @@ function contact() {
     <div>
       <Contactsbanner/>
       <Contactarea/>
-      <Maparea/>
+      {/* <Maparea/> */}
+      <Locationcover/>
     </div>
   )
 }
