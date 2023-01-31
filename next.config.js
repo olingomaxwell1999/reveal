@@ -9,4 +9,8 @@ const apiKey = {
   },
 }
 
-module.exports = nextConfig, apiKey
+const small = {
+  compress: true,
+}
+
+module.exports = nextConfig, apiKey, small
