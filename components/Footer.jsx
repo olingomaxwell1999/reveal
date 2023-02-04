@@ -22,17 +22,17 @@ function Footer() {
         </div>
         <div className="area">
           <div className="right-area-side">
-            <p>Copyright 2022</p>
-            <p>THE REVEAL.</p>
-            <p>All Rights Reserved</p>
+            <h3>Office Hours</h3>
+            <p>Monday - Friday 07:30am to 16:30pm</p>
+            <p>Saturday 09:00am to 13:00pm</p>
           </div>
 
           <div className="area-line"></div>
         </div>
         <div className="right-area-side">
-          <p>Copyright 2022</p>
-          <p>THE REVEAL.</p>
-          <p>All Rights Reserved</p>
+          <h3>comex homes</h3>
+          <p>Saku Business Park, North Airport Road. Embakasi.</p>
+          <p>Phone : +254 730 870870</p>
         </div>
       </div>
 

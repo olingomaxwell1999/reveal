@@ -308,6 +308,10 @@ nav{
   margin-bottom: 20px;
 }
 
+.main-footer .top .right-area-side h3{
+  text-transform: uppercase;
+}
+
 .footer-image{
   height: 200px;
   width: 200px;
