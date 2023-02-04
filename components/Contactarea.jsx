@@ -6,6 +6,8 @@ import Logo from '../assets/logo.jpg'
 import {ImFacebook} from 'react-icons/im'
 import {AiOutlineInstagram, AiOutlineTwitter, AiFillYoutube} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
+import emailjs from '@emailjs/browser';
+import Result from './Result'
 
 function Contactarea() {
 
@@ -16,94 +18,23 @@ function Contactarea() {
     const [subject, setSubject] = useState('')
     const [message,setMessage] = useState('')
 
-    //   Form validation state
-  const [errors, setErrors] = useState({});
+  // const form = useRef();
+  const [result, setResult] = useState(false)
 
-  //   Setting button text on form submission
-  const [buttonText, setButtonText] = useState("Send");
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  // Setting success or failure messages states
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-  const [showFailureMessage, setShowFailureMessage] = useState(false);
+    emailjs.sendForm('service_k0kmfra', 'template_1gexomv', e.target, '9hsiJOao5Q5BKRDMW')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
 
-    const handleSubmit = async (e) => {
-        e.preventDefault()
+      e.target.reset()
 
-        let isValidForm = handleValidation()
-
-        const res = await fetch('/pages/api/sendgrid.js', {
-            body: JSON.stringify(
-                {
-                    email : email,
-                    firstName: firstName,
-                    secondName : secondName,
-                    phoneNumber : phoneNumber,
-                    subject : subject,
-                    message : message
-                }
-            ),
-            headers : {
-                'Content-Type': 'application/json',
-            },
-            method : 'POST',
-        })
-
-        const {error} = await res.json()
-
-        if (error) {
-            console.log(error)
-            setShowSuccessMessage(false)
-            setShowFailureMessage(true)
-            setButtonText("Send")
-            return
-        }
-
-        console.log(firstName, secondName, email, phoneNumber, subject, message)
-
-        setShowSuccessMessage(true);
-        setShowFailureMessage(false);
-        setButtonText("Send");
-    }
-
-    // handling validation of the form
-
-  const handleValidation = () => {
-    let tempErrors = {};
-    let isValid = true;
-
-    if (firstName.length <= 0) {
-      tempErrors["firstname"] = true;
-      isValid = false;
-    }
-    if (secondName.length <= 0) {
-      tempErrors["secondname"] = true;
-      isValid = false;
-    }
-    if (email.length <= 0) {
-      tempErrors["email"] = true;
-      isValid = false;
-    }
-    if (phoneNumber.length <= 0) {
-      tempErrors["phonenumber"] = true;
-      isValid = false;
-    }
-    if (subject.length <= 0) {
-      tempErrors["subject"] = true;
-      isValid = false;
-    }
-    if (message.length <= 0) {
-      tempErrors["message"] = true;
-      isValid = false;
-    }
-
-    setErrors({ ...tempErrors });
-    console.log("errors", errors);
-    return isValid;
-  };
-
-    // const handleChange = () => {
-    //     console.log('I have been changed Successfully!!!!');
-    // }
+      setResult(true)
+  };  
 
   return (
     <div className='contact-area'>
@@ -112,42 +43,48 @@ function Contactarea() {
             <h1>contact - us</h1>
         </div>
 
-        <form className='contact-form' onSubmit={handleSubmit}>
+        <form className='contact-form' onSubmit={sendEmail}>
             <div className="top-form">
                 <div className="input-carrier">
-                    <label htmlFor="first name" className="mb-2 italic">First Name</label>
-                    <input className="mb-4 border-b-2" id="name" name="name" value={firstName} type="text" autoComplete="name" required />
+                    <label htmlFor="first name">First Name</label>
+                    <input type="text" name='firstName' required />
                 </div>
 
                 <div className="input-carrier">
-                    <label htmlFor="last name" className="mb-2 italic">Last Name</label>
-                    <input className="mb-4 border-b-2" id="name" name="name" value={secondName} type="text" autoComplete="name" required />
+                    <label htmlFor="last name">Last Name</label>
+                    <input  type="text" name='secondName' required />
                 </div>
 
                 <div className="input-carrier">
-                    <label htmlFor="email" className="mb-2 italic">Email</label>
-                    <input className="mb-4 border-b-2" id="name" name="name" value={email} type="email" autoComplete="name" required />
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name='email' required />
                 </div>
 
                 <div className="input-carrier">
-                    <label htmlFor="phone number" className="mb-2 italic">Phone Number</label>
-                    <input className="mb-4 border-b-2" id="name" name="name" value={phoneNumber} type="tel" autoComplete="name" required />
+                    <label htmlFor="phone number">Phone Number</label>
+                    <input type="tel" name='phone' required />
                 </div>
             </div>
 
             <div className="input-carrier">
                 <label htmlFor="subject">Subject</label>
-                <input className="mb-4 border-b-2" id="name" name="name" value={subject} type="tel" autoComplete="name" required />
+                <input type="text" name='subject' required />
             </div>
 
             <div className="input-carrier">
-                <label htmlFor="phone number" className="mb-2 italic">Message</label>
+                <label htmlFor="message" >Message</label>
 
-                <textarea className='message' name="message" value={message} id="message"></textarea>
+                <textarea className='message' name='message'></textarea>
             </div>
 
             <div className="btn-area">
                 <button className="btn-light">submit</button>
+            </div>
+
+            <div className='result'>
+              {
+                result ? <Result/> : null
+              }
             </div>
         </form>
 

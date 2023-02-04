@@ -15,7 +15,7 @@ function Footer() {
       <div className="top">
         <div className="area">
           <div className="right-area-side">
-            <Image src={Logo} height={200} width={200} priority='true' alt='the reveal logo'/>
+            <Image src={Logo} height={200} className='footer-image' width={200} priority='true' alt='the reveal logo'/>
           </div>
 
           <div className="logo-line"></div>

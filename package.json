@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@react-google-maps/api": "^2.18.1",
     "@sendgrid/mail": "^7.7.0",
     "aos": "^2.3.4",

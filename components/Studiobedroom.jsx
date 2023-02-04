@@ -38,7 +38,7 @@ These units sits on a built up areas of approximately.
 world class amenities, The Reveal</p>
 
                 <p>has an exquisite collection of Spacious
-studios ranging from Deluxe Studio</p>
+studios ranging from Junior Studios to Deluxe Studios</p>
 
                 {/* <p> 
  

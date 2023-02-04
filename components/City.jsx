@@ -51,12 +51,6 @@ function City() {
           <AiOutlineCoffee className='icon-city' color={'#777777'}/>
           <h3>Coffee Shop</h3>
         </div>
-
-        <div className='city-card'>
-          <CgGym className='icon-city' color={'#777777'}/>
-          <h3>fully fitted gymnasium with</h3>
-          <h3>indoor and outdoor spaces</h3>
-        </div>
         
       </div>
     </div>

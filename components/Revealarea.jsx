@@ -14,7 +14,7 @@ function Revealarea() {
     <div data-aos='fade-up' className='amenities-second'>
         <div className="amenities-first-heading">
             <h3>WELCOME TO</h3>
-            <h2>THE REVEAL ESTATE</h2>
+            <h2>THE REVEAL</h2>
         </div>
         <div className="amenities-first-text">
             <p>An Investment that will enable you to achieve consistent and above market Rental Returns. The Reveal, Sets the standard for revolutionary architectural innovation and premier living experience in the heart of Kilimani, Nairobi County. 
@@ -25,7 +25,7 @@ function Revealarea() {
           
 
           <Link href='https://share-eu1.hsforms.com/1LcZAa3CaT0-6ukDcxYncXgfblz8' target='_blank'>
-            <button className="btn">register interests</button>
+            <button className="btn">register interest</button>
           </Link>
         </div>
 

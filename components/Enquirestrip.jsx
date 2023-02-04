@@ -37,7 +37,7 @@ function Enquirestrip() {
       <div className="btn-area">
         <div className="place">
           <Link href='https://share-eu1.hsforms.com/1LcZAa3CaT0-6ukDcxYncXgfblz8' target='_blank'>
-            <button className="btn">register interests</button>
+            <button className="btn">register interest</button>
           </Link>
         </div>
       </div>

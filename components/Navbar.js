@@ -20,7 +20,7 @@ const Navbar = () => {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-          <Image src={Logo} height={70} alt='reveal logo'/>
+          <Image src={Logo} className='nav-image' height={70} alt='reveal logo'/>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
