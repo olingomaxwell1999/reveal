@@ -15,6 +15,8 @@
   font-family: 'Futura PT', sans-serif;
 }
 
+/* Global Styles */
+
 html{
   overflow-y: scroll;
   overflow-x: hidden;
@@ -22,11 +24,37 @@ html{
 
 body {
   overflow: hidden; /* Hide scrollbars */
+  overflow-x: hidden;
 }
+
+body::-webkit-scrollbar{
+  display: none !important;
+  overflow-x: hidden;
+}
+
+div::-webkit-scrollbar {
+  width: 0 !important
+}
+
+div {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll; 
+  overflow-x: hidden;
+}
+
+div::-webkit-scrollbar {
+  display: none;
+  overflow-x: hidden;
+}
+
 a{
   text-decoration: none;
   color: inherit;
 }
+
+/* start of navigation styles */
+
 header{
   position: fixed !important;
   z-index: 100000;
@@ -178,8 +206,9 @@ nav{
   background-color: #fff;
   position: absolute;
   left: 50%;
-  top: 50px;
+  top: 40%;
   transform: translateX(-50%);
+  transform: translateY(-50%);
 }
 
 .enquirestrip{
@@ -189,6 +218,8 @@ nav{
   background-color: #fff;
   left: 0;
   bottom: 0;
+  overflow: hidden;
+  overflow-x: hidden;
   margin: auto;
   padding: 10px 40px;
   display: flex;
@@ -198,10 +229,16 @@ nav{
   gap: 10px;
 }
 
+/* .enquirestrip::-webkit-scrollbar{
+  display: none;
+  overflow: hidden;
+} */
+
 .description-area{
   display: grid;
   grid-template-columns: repeat(5,1fr);
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 /* .description-area .place h2{
@@ -240,7 +277,13 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
   /* align-items: center; */
+}
+
+.place::-webkit-scrollbar{
+  display: none !important;
 }
 
 .place h3{
@@ -359,7 +402,7 @@ nav{
 
 /* About Team Styles */
 .about-team{
-  padding: 20px 100px;
+  padding: 80px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -381,6 +424,7 @@ nav{
   grid-template-columns: repeat(4,1fr);
   gap: 20px;
   width: 100%;
+  overflow: hidden;
 }
 
 .about-team .bottom .place h2{
@@ -490,7 +534,7 @@ nav{
 .studiobedroom{
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
+  padding: 80px 40px;
   background-color: #f8a428;
   text-align: center;
   position: relative;
@@ -562,7 +606,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* Reveal Area Section  */
 .reveal{
-  padding: 20px 40px;
+  padding: 80px 40px;
 }
 
 .top-heading{
@@ -658,6 +702,10 @@ h1,h2,h3,h4,h5,h6{
 
 .amenities-second .amenities-first-heading h2{
   color: #f8a428;
+}
+
+.amenities-second .amenities-first-heading h3{
+  margin-bottom: -10px;
 }
 
 /* Slider Styles */

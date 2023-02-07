@@ -17,18 +17,18 @@ function Aboutteam() {
         <div className="bottom">
             <div className="place">
                 <h3>Developer</h3>
-                <h2>Comex Homes</h2>
+                <h2>Comex Builders</h2>
             </div>
             <div className="place">
                 <h3>Architect</h3>
-                <h2>Mnara Architect</h2>
+                <h2>Salcohm Studios Limited.</h2>
             </div>
             <div className="place">
-                <h3>Marketing Content</h3>
-                <h2>Karim cg visual</h2>
+                <h3>Structural Engineer</h3>
+                <h2>Metric Integrated Consultancy</h2>
             </div>
             <div className="place">
-                <h3>Sales</h3>
+                <h3>Associate</h3>
                 <h2>Comex Homes</h2>
             </div>
         </div>

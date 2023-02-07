@@ -21,7 +21,7 @@ function Revealarea() {
 </p>
         </div>
 
-        <div style={{marginTop:'30px'}} className='btn-area'>
+        <div style={{marginTop:'20px'}} className='btn-area'>
           
 
           <Link href='https://share-eu1.hsforms.com/1LcZAa3CaT0-6ukDcxYncXgfblz8' target='_blank'>
