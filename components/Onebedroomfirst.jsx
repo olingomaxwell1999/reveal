@@ -6,7 +6,6 @@ function Onebedroomfirst() {
         <div className="amenities-first-heading">
             <h3>BREATHTAKING VIEWS</h3>
             <h2>WELL DESIGNED ONE BEDROOM LAYOUTS</h2>
-            <h3>DISTINCTIVE</h3>
         </div>
         <div className="amenities-first-text">
             <p>The epitome of elegant and intuitive design, each 1 bedroom offers an effortless blend of luxurious comfort, plenteous space and architectural sophistication. These units sits on a built up areas of approximately. <br/> <br/>

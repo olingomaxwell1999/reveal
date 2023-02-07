@@ -1,12 +1,20 @@
 import React from 'react'
+import useDownloader from "react-use-downloader";
 
 function Studiofirst() {
+
+    const { size, elapsed, percentage, download,
+        cancel, error, isInProgress } =
+    useDownloader();
+  
+  const fileUrl = "../assets/THE REVEAL BROCHURE.pdf";
+  const filename = "File.pdf";
+
   return (
     <div className='amenities-first'>
         <div className="amenities-first-heading">
             <h3>BREATHTAKING VIEWS</h3>
             <h2>WELL DESIGNED STUDIO LAYOUTS</h2>
-            <h3>DISTINCTIVE</h3>
         </div>
         <div className="amenities-first-text">
             <p>Nestled in nature yet connected to an inspired array of
@@ -35,7 +43,7 @@ elements expected in this class are blended seamlessly.</p>
         </div>
 
         <div style={{marginTop:'30px'}} className='btn-area'>
-          <button className="btn-light">Download brochure</button>
+          <button className="btn-light" onClick={() => download(fileUrl, filename)}>Download brochure</button>
         </div>
     </div>
   )

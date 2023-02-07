@@ -1,14 +1,15 @@
 import {AiOutlineArrowRight, AiOutlineArrowLeft} from 'react-icons/ai'
+import useDownloader from "react-use-downloader"
 import { useRef, useState, useEffect } from "react";
 import Onebedroomitem from './Onebedroomitem';
 import ImageOne from '../assets/One bed (2).jpg'
 import ImageTwo from '../assets/One bed (3).jpg'
 import ImageThree from '../assets/One bed (4).jpg'
-import ImageFour from '../assets/One bed (6)'
+import ImageFour from '../assets/One bed (6).jpg'
 import ImageFive from '../assets/Reveal rooftop (1).jpg'
 import ImageSix from '../assets/One bed (7).jpg'
 import ImageSeven from '../assets/One bed (9).jpg'
-import ImageEight from '../assets/Reveal building (2)'
+import ImageEight from '../assets/Reveal building (2).jpg'
 import ImageNine from '../assets/bannerfour.jpg'
 import ImageTen from '../assets/bannerone.jpg'
 import ImageEleven from '../assets/bannersix.jpg'

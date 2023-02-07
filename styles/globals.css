@@ -81,7 +81,6 @@ nav{
   background-color: #f8a428;
   border-radius: 2px;
 }
-
 .nav-image{
   height: 70px;
   width: 180px;
@@ -916,7 +915,7 @@ ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .map-image-area{
