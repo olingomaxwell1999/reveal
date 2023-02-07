@@ -659,12 +659,18 @@ h1,h2,h3,h4,h5,h6{
 .amenities-first-heading h3{
   font-size: 20px;
   font-weight: 500;
+  margin-bottom: -10px;
 }
 
 .amenities-first-heading h2{
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
+}
+
+.location-cover{
+  margin-bottom: -10px;
+  overflow: hidden !important;
 }
 
 .amenities-first-text{

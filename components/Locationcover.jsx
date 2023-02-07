@@ -11,7 +11,7 @@ function Locationcover() {
   })
 
   return (
-    <div>
+    <div className="location-cover">
         <Image data-aos='fade-up' priority='true' className='coverimage' src={cover} width='auto' height='auto' alt='cover'/>
     </div>
   )
