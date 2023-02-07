@@ -84,6 +84,7 @@ nav{
 
 .nav-image{
   height: 70px;
+  width: 180px;
   object-fit: cover;
 }
 

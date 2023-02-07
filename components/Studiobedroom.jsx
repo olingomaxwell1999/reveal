@@ -9,6 +9,12 @@ function Studiobedroom() {
     AOS.init({duration:1500})
   })
 
+  const saveFile = () => {
+    saveAs(
+      "../assets/THE REVEAL BROCHURE.pdf"
+    );
+  };
+
   return (
     <div data-aos='fade-up' className='studiobedroom'>
         <div className="top-layer">
@@ -51,7 +57,7 @@ elements expected in this class are blended seamlessly.</p> */}
         </div>
         <div className="bottom-layer">
             <Link href='../assets/THE REVEAL BROCHURE.pdf' download='true'>
-              <button className='btn-light'>download brochure</button>
+              <button onClick={saveFile} className='btn-light'>download brochure</button>
             </Link>
         </div>
     </div>

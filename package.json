@@ -15,7 +15,8 @@
     "aos": "^2.3.4",
     "next": "^13.1.4",
     "react-animation-on-scroll": "^5.1.0",
-    "react-icons": "^4.7.1"
+    "react-icons": "^4.7.1",
+    "react-use-downloader": "^1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
