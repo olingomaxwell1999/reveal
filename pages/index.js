@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Head>
         <title>The Reveal</title>
-        <meta name="description" content="Official Reveal website" />
+        <meta name="description" content="The official reveal is an area of residence ready to be bought. Here you will find all the information you need." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

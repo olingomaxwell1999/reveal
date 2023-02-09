@@ -13,4 +13,16 @@ const small = {
   compress: true,
 }
 
-module.exports = nextConfig, apiKey, small
+const redirect = {
+  async redirects() {
+    return [
+      {
+        source: '/old-page',
+        destination: '/new-page',
+        permanent: true,
+      },
+    ]
+  },
+}
+
+module.exports = nextConfig, apiKey, small, redirect
