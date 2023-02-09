@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Banner from '../assets/One bed (7).jpg'
+import Banner from '../assets/bannerfour.jpg'
 
 function InvestorsGuideBanner() {
 
@@ -15,7 +15,7 @@ function InvestorsGuideBanner() {
         <Image priority='true' className="banner-image" src={Banner} alt='Banner Amenities'/>
 
         <div className="text">
-          <h1>Investors Guide</h1>
+          {/* <h1>Investors Guide</h1> */}
         </div>
     </div>
   )

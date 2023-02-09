@@ -9,11 +9,28 @@ function Studiobedroom() {
     AOS.init({duration:1500})
   })
 
-  const saveFile = () => {
-    saveAs(
-      "../assets/THE REVEAL BROCHURE.pdf"
-    );
-  };
+  const downloadPdf = () => {
+
+    //using javascript method to fetch the file
+
+    fetch('../assets/THE REVEAL BROCHURE.pdf').then(response => {
+      response.blob()
+      .then(blob => {
+        //creating the new object of pdf file
+        const fileURL = window.URL.createObjectURL(blob)
+
+        //setting various property values
+        let alink = document.createElement('a')
+
+        alink.href = fileURL
+
+        alink.download = '../assets/THE REVEAL BROCHURE.pdf'
+
+        alink.click()
+      })
+    })
+
+  }
 
   return (
     <div data-aos='fade-up' className='studiobedroom'>
@@ -57,7 +74,7 @@ elements expected in this class are blended seamlessly.</p> */}
         </div>
         <div className="bottom-layer">
             <Link href='../assets/THE REVEAL BROCHURE.pdf' download='true'>
-              <button onClick={saveFile} className='btn-light'>download brochure</button>
+              <button onClick={downloadPdf} className='btn-light'>download brochure</button>
             </Link>
         </div>
     </div>

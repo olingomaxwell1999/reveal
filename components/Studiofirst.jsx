@@ -1,14 +1,13 @@
-import React from 'react'
-import useDownloader from "react-use-downloader";
+import React,{useState} from 'react'
+import Studiomodal from './Studiomodal'
 
 function Studiofirst() {
 
-    const { size, elapsed, percentage, download,
-        cancel, error, isInProgress } =
-    useDownloader();
-  
-  const fileUrl = "../assets/THE REVEAL BROCHURE.pdf";
-  const filename = "File.pdf";
+    const [openModal, setOpenModal] = useState(false)
+
+  const handleClick = () => {
+    setOpenModal(true)
+  }
 
   return (
     <div className='amenities-first'>
@@ -43,8 +42,12 @@ elements expected in this class are blended seamlessly.</p>
         </div>
 
         <div style={{marginTop:'30px'}} className='btn-area'>
-          <button className="btn-light" onClick={() => download(fileUrl, filename)}>Download brochure</button>
+          <button className="btn-light" onClick={handleClick}>view floor plan</button>
         </div>
+
+        {openModal ? (
+      <Studiomodal closeModal={setOpenModal}/>
+    ) : null}
     </div>
   )
 }

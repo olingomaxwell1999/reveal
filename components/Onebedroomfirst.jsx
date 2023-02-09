@@ -1,8 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
+import Onebedroommodal from './Onebedroommodal'
 
 function Onebedroomfirst() {
+
+  const [openModal, setOpenModal] = useState(false)
+
+  const handleClick = () => {
+    setOpenModal(true)
+  }
+
   return (
-    <div className='amenities-second'>
+    <div className='amenities-second pos'>
         <div className="amenities-first-heading">
             <h3>BREATHTAKING VIEWS</h3>
             <h2>WELL DESIGNED ONE BEDROOM LAYOUTS</h2>
@@ -25,8 +33,12 @@ function Onebedroomfirst() {
         </div>
 
         <div style={{marginTop:'30px'}} className='btn-area'>
-          <button className="btn">Download brochure</button>
+          <button onClick={handleClick} className="btn">view floor plan</button>
         </div>
+
+        {openModal ? (
+      <Onebedroommodal closeModal={setOpenModal}/>
+    ) : null}
     </div>
   )
 }

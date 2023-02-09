@@ -1,6 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
+import Revealmodal from './Revealmodal'
 
 function Studiosecond() {
+
+  const [openModal, setOpenModal] = useState(false)
+
+  const handleClick = () => {
+    setOpenModal(true)
+  }
+
   return (
     <div className='amenities-second'>
         <div className="amenities-first-heading">
@@ -14,8 +22,12 @@ by world class amenities.</p>
         </div>
 
         <div style={{marginTop:'30px'}} className='btn-area'>
-          <button className="btn">Download floor plans</button>
+          <button className="btn" onClick={handleClick}>view floor plans</button>
         </div>
+
+        {openModal ? (
+      <Revealmodal closeModal={setOpenModal}/>
+    ) : null}
 
     </div>
   )
