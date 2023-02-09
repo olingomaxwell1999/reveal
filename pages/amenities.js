@@ -2,7 +2,7 @@ import Amenitiesfirst from '@/components/Amenitiesfirst'
 import Amenitiessecond from '@/components/Amenitiessecond'
 import Amenitiesslider from '@/components/Amenitiesslider'
 import BannerAmenities from '@/components/BannerAmenities'
-import City from '@/components/City'
+import Cityamenities from '@/components/Cityamenities'
 import Coveramenities from '@/components/Coveramenities'
 import React from 'react'
 
@@ -14,7 +14,7 @@ function amenities() {
       <Coveramenities/>
       <Amenitiessecond/>
       <Amenitiesslider/>
-      <City/>
+      <Cityamenities/>
     </div>
   )
 }

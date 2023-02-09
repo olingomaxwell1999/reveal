@@ -8,6 +8,7 @@ import {CgGym} from 'react-icons/cg'
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Link from 'next/link'
 
 function City() {
 
@@ -53,6 +54,13 @@ function City() {
         </div>
         
       </div>
+
+      <div style={{marginTop:'30px'}} className='btn-area'>
+          <Link href={'/amenities/#amenities'}>
+            <button className="btn">check out more</button>
+          </Link>
+          </div>
+
     </div>
   )
 }
