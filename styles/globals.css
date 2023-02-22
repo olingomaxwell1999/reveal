@@ -990,3 +990,92 @@ ul{
     width: 80% !important;
   }
 }
+
+/* Investment Plan Styles */
+.investment-plan{
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.investment-plan .top-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.investment-plan .top-text h3{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: -5px;
+}
+
+.investment-plan .top-text h1{
+  font-size: 30px;
+  color: #f8a428;
+  text-transform: uppercase;
+  margin-bottom: -5px;
+}
+
+.investment-plan .investment-area{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width:768px){
+  .investment-plan .investment-area{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width:600px){
+  .investment-plan .investment-area{
+    grid-template-columns: 1fr;
+  }
+}
+
+.investment-plan .investment-area .heading-place{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #f8a428;
+  margin-bottom: 10px;
+}
+
+/* Purchase Plan styles */
+
+.purchase-plan{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+}
+
+.purchase-plan .top-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.purchase-plan .top-text h1{
+  color: #f8a428;
+}
+
+.purchase-plan .list-purchase{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* list-style: circle; */
+}
+
+.purchase-plan .list-purchase li span{
+  font-weight: 600;
+  margin-right: 10px;
+}
