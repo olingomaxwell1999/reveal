@@ -1039,13 +1039,17 @@ ul{
   }
 }
 
-.investment-plan .investment-area .heading-place{
+.investment-plan .heading-place{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   text-transform: uppercase;
   color: #f8a428;
   margin-bottom: 10px;
+}
+
+.investment-plan .text-area-investment{
+  margin-bottom: 20px;
 }
 
 /* Purchase Plan styles */
@@ -1078,4 +1082,4 @@ ul{
 .purchase-plan .list-purchase li span{
   font-weight: 600;
   margin-right: 10px;
-}
+} 
