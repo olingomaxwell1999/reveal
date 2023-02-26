@@ -1,7 +1,8 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Link from 'next/link'
+// import Link from 'next/link'
+// import pdfFile from '../assets/THE REVEAL BROCHURE.pdf'
 
 function Studiobedroom() {
 
@@ -9,27 +10,58 @@ function Studiobedroom() {
     AOS.init({duration:1500})
   })
 
-  const downloadPdf = () => {
+  // const downloadPdf = () => {
 
-    //using javascript method to fetch the file
+  //   //using javascript method to fetch the file
 
-    fetch('../assets/THE REVEAL BROCHURE.pdf').then(response => {
-      response.blob()
-      .then(blob => {
-        //creating the new object of pdf file
-        const fileURL = window.URL.createObjectURL(blob)
+  //   fetch('../assets/THE REVEAL BROCHURE.pdf').then(response => {
+  //     response.blob()
+  //     .then(blob => {
+  //       //creating the new object of pdf file
+  //       const fileURL = window.URL.createObjectURL(blob)
 
-        //setting various property values
-        let alink = document.createElement('a')
+  //       //setting various property values
+  //       let alink = document.createElement('a')
 
-        alink.href = fileURL
+  //       alink.href = fileURL
 
-        alink.download = '../assets/THE REVEAL BROCHURE.pdf'
+  //       alink.download = '../assets/THE REVEAL BROCHURE.pdf'
 
-        alink.click()
-      })
-    })
+  //       alink.click()
+  //     })
+  //   })
 
+  // }
+
+  const brochure = 'https://www.thereveal.co.ke/cv.pdf'
+
+  const handleClick = (url) => {
+    console.log('This button has been clicked')
+
+    //making the pdf a link
+    const fileName = url.split("/").pop()
+
+    //creating an anchor tag
+    const aTag = document.createElement('a')
+
+    //adding the href attribute
+    aTag.href = url
+
+    //adding the download attribute and the pdf link attribute
+    aTag.setAttribute("download", fileName)
+
+    //adding the newly created element to the body 
+    document.body.appendChild(aTag)
+
+    //activating the click functionality
+    aTag.click()
+
+    //removing the aTag after clicking
+    aTag.remove()
+  }
+
+  const runHandleClick = () => {
+    handleClick(brochure)
   }
 
   return (
@@ -45,10 +77,6 @@ offers an effortless blend of luxurious </p>
 
                 <p>comfort, plenteous
 space and architectural sophistication.</p>
-{/* <p> 
-These units sits on a built up areas of approximately.
-▪︎One Bedroom Deluxe - 510 sqft
-▪︎One Bedroom - 365 sqft</p> */}
                 
             </div>
             <div className="middle-line"></div>
@@ -62,20 +90,10 @@ world class amenities, The Reveal</p>
 
                 <p>has an exquisite collection of Spacious
 studios ranging from Junior Studios to Deluxe Studios</p>
-
-                {/* <p> 
- 
-Superior Studio - 255 sqft
-and Junior Studio - 195 sqft.
-Masterfully set, the Studios are balanced in both proportion
-and feature. All the contemporary life enhancing design
-elements expected in this class are blended seamlessly.</p> */}
             </div>
         </div>
         <div className="bottom-layer">
-            <Link href='../assets/THE REVEAL BROCHURE.pdf' download='true'>
-              <button onClick={downloadPdf} className='btn-light'>download brochure</button>
-            </Link>
+          <button className='btn-light' onClick={runHandleClick}>Download Brochure</button>
         </div>
     </div>
   )

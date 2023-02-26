@@ -21,7 +21,7 @@ by world class amenities.</p>
         </div>
 
         <div style={{marginTop:'30px'}} className='btn-area'>
-          <button className="btn">amenities plan</button>
+          <button className="btn-light">amenities plan</button>
           </div>
     </div>
   )

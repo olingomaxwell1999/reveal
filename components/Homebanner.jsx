@@ -16,6 +16,7 @@ function Homebanner() {
 
       <div className="text">
         <h1>The Reveal</h1>
+        <h3>Karbanet Road</h3>
       </div>
     </div>
   )

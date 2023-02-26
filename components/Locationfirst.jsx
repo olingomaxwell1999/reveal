@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Link from 'next/link'
 
 function Locationfirst() {
 
@@ -21,26 +22,14 @@ University and Nairobi CBD.
 <br/> <br/>
             </p>
 
-            {/* <ul className='bedrooms'>
-                <li>
-                    Deluxe Studio - 285 sqft,
-                </li>
-
-                <li>
-                    Superior Studio - 255 sqft
-                </li>
-
-                <li>
-                    Junior Studio - 195 sqft.
-                </li>
-            </ul> */}
-
             <p>What’s more, you can reach Southern Bypass and the
 Expressway within just 5mins.</p>
         </div>
 
         <div style={{marginTop:'30px'}} className='btn-area'>
-          <button className="btn-light">Head to google maps</button>
+          <Link href='https://maps.app.goo.gl/15c9hdiKjR91XrwA6' target='_blank'>
+            <button className="btn-light">Head to google maps</button>
+          </Link>
         </div>
     </div>
   )
