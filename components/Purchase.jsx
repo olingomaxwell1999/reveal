@@ -11,7 +11,7 @@ function Purchase() {
   return (
     <div data-aos="fade-up" className='purchase-plan'>
         <div data-aos="fade-up" className="top-text">
-          <h3>the balozi suites</h3>
+          <h3>the reveal</h3>
           <h1>purchase plan</h1>
         </div>
 

@@ -193,6 +193,11 @@ nav{
   text-align: center;
 }
 
+.main{
+  overflow: visible;
+  width: 100%;
+}
+
 .text h3{
   font-size: 50px;
   color: #f8a428;
