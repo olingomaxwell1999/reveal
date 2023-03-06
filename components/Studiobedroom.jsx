@@ -33,7 +33,7 @@ function Studiobedroom() {
 
   // }
 
-  const brochure = 'https://www.thereveal.co.ke/cv.pdf'
+  const brochure = 'https://www.thereveal.co.ke/THE REVEAL BROCHURE.pdf'
 
   const handleClick = (url) => {
     console.log('This button has been clicked')
