@@ -24,15 +24,23 @@ studios ranging from <br/> <br/>
 
             <ul className='bedrooms'>
                 <li>
-                    Deluxe Studio - 285 sqft,
+                    Convertible Studio - 294 sqft,
                 </li>
 
                 <li>
-                    Superior Studio - 255 sqft
+                    Supreme Studio - 287 sqft 
                 </li>
 
                 <li>
-                    Junior Studio - 195 sqft.
+                    Elite Studios - 281 sqft.
+                </li>
+
+                <li>
+                    Urban Studios - 272 sqft.
+                </li>
+
+                <li>
+                    Junior Studios - 260 sqft.
                 </li>
             </ul>
 

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Onebedroomplan from '../assets/studioplan.jpg'
+import Onebedroomplan from '../assets/studioplan.png'
 import React,{useEffect} from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'

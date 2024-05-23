@@ -17,7 +17,7 @@ function Aboutteam() {
         <div className="bottom">
             <div className="place">
                 <h3>Developer</h3>
-                <h2>Comex Builders</h2>
+                <h2>The Reveal Group</h2>
             </div>
             <div className="place">
                 <h3>Architect</h3>

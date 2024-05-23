@@ -22,12 +22,16 @@ function Onebedroomfirst() {
             <ul className='bedrooms'>
                 <li>
                     <span></span>
-                    One Bedroom Deluxe - 510 sqft
+                    Deluxe 1 Bedroom - 541sqft
                 </li>
 
                 <li>
                     <span></span>
-                    One Bedroom - 365 sqft
+                     Executive 1 Bedroom - 460 sqft
+                </li>
+                <li>
+                    <span></span>
+                     Premium 1 Bedroom - 363 sqft
                 </li>
             </ul>
         </div>
