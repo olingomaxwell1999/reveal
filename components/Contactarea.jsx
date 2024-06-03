@@ -24,7 +24,13 @@ function Contactarea() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_k0kmfra', 'template_1gexomv', e.target, '9hsiJOao5Q5BKRDMW')
+    emailjs
+      .sendForm(
+        "service_prk4agt",
+        "template_92qp9di",
+        e.target,
+        "wyL9szuhcFXTO7PpM4yk0"
+      )
       .then((result) => {
           console.log(result.text);
       }, (error) => {
