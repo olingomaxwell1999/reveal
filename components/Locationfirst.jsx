@@ -17,7 +17,7 @@ function Locationfirst() {
         <div className="amenities-first-text">
             <p>Within a prestigious spot alongside Ngong Road, The
 Reveal is Located just minutes’ drive from Yaya Centre,
-Junction Mall, Prestige Plaza Shopping Mall, Dayspring
+Junction Mall, Prestige Plaza Shopping Mall, Daystar
 University and Nairobi CBD.
 <br/> <br/>
             </p>

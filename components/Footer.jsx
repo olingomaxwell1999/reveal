@@ -6,6 +6,8 @@ import 'aos/dist/aos.css'
 
 function Footer() {
 
+  const currentYear = new Date().getFullYear();
+
   useEffect(() => {
     AOS.init({duration:1500})
   })
@@ -24,7 +26,7 @@ function Footer() {
           <div className="right-area-side">
             <h3>Office Hours</h3>
             <p>Monday - Friday 08:30am to 16:30pm</p>
-            <p>Saturday - Closed</p>
+            <p>Saturday - closed</p>
           </div>
 
           <div className="area-line"></div>
@@ -37,7 +39,7 @@ function Footer() {
       </div>
 
       <div className="bottom">
-        <p>The Reveal &copy; 2023</p>
+        <p>The Reveal &copy; {currentYear} </p>
       </div> 
     </div>
   )

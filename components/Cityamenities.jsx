@@ -45,8 +45,8 @@ function Cityamenities() {
         </div>
 
         <div className='city-card'>
-          <BiRestaurant className='icon-city' color={'#777777'}/>
-          <h3>Rooftop Fine Dine Restaurant</h3>
+          <CgGym className='icon-city' color={'#777777'}/>
+          <h3>Gym</h3>
         </div>
 
         <div className='city-card'>

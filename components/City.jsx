@@ -2,7 +2,7 @@ import {TbSwimming} from 'react-icons/tb'
 import {GiLift} from 'react-icons/gi'
 import {MdBusinessCenter} from 'react-icons/md'
 import {FaCouch} from 'react-icons/fa'
-import {BiRestaurant} from 'react-icons/bi'
+// import {BiRestaurant} from 'react-icons/bi'
 import {AiOutlineCoffee} from 'react-icons/ai'
 import {CgGym} from 'react-icons/cg'
 import React,{useEffect} from 'react'
@@ -44,8 +44,8 @@ function City() {
         </div>
 
         <div className='city-card'>
-          <BiRestaurant className='icon-city' color={'#777777'}/>
-          <h3>Rooftop Fine Dine Restaurant</h3>
+          <CgGym className='icon-city' color={'#777777'}/>
+          <h3>Gym</h3>
         </div>
 
         <div className='city-card'>
