@@ -25,6 +25,15 @@ function MyApp ({Component, pageProps}) {
             })
           `}
         </Script>
+        {/* Start of HubSpot Embed Code */}
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-eu1.hs-scripts.com/25735940.js"
+        />
+        {/* End of HubSpot Embed Code */}
         <Component {...pageProps}/>
       </Layout>
     </>
