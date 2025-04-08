@@ -28,6 +28,16 @@ export default function Home() {
             `,
           }}
         ></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTSB4BN10X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTSB4BN10X');
+</script>
+
       </Head>
       <Homebanner/>
       <Revealarea/>
